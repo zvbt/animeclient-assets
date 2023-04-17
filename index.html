@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+
 
 <head>
     <title>AnimeClient</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/soon.css">
     <link rel="shortcut icon" href="https://ac.akali.best/assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="https://ac.akali.best/assets/favicon.ico" type="image/x-icon">
     <meta content="utf-8" http-equiv="encoding">
@@ -11,27 +12,66 @@
     <link link="" href="https://fonts.googleapis.com/css?family=Lato:400|Raleway:700" rel="stylesheet">
     <style>
         body {
+            position: absolute;
             overflow: hidden;
             color: #eee;
             font-family: "Lato", sans-serif;
+        }
+
+        .close-btn {
+            position: absolute;
+            right: 1em;
+            top: .6em;
+            padding: 5px;
+            cursor: pointer;
+            z-index: 999;
+
+        }
+
+        #bg-vid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 1280px;
+            height: 720px;
+            z-index: -1;
+            filter: blur(4px);
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="/assets/logo/icon512.png" alt="logo">
+    <video id="bg-vid" autoplay muted loop>
+        <source src="/assets/videos/6.webm" type="video/mp4">
+    </video>
+
+    <div class="box"></div>
+    <header style="-webkit-app-region: drag">
+        <img class="logo" src="/assets/logo/icon512.png" alt="logo"> <a href="" style="-webkit-app-region: no-drag"
+            class="close-btn" onclick="window.close();"><img src="assets/close.png" alt="close" width="15px" /></a>
     </header>
 
     <section id="video">
         <h1 class="description">Select your language</h1>
         <div class="support">
             <div class="providers">
-                <div> </div>
+
                 <div class="container">
-                    <a href="#"><img src="assets/flag/france.png"></a>
-                    <a href="#"><img src="assets/flag/uk.png"></a>
-                    <a href="#"><img src="assets/flag/germany.png"></a>
+
+                    <a href="https://d3ward.github.io/toolz/adblock.html"> <img src="assets/logo/icon512.png"></a>
+                    <a href="https://neko-sama.fr"> <img src="assets/flag/france.png"></a>
+
+                    <div class="tooltip"><a href="#"><img src="assets/flag/uk.png" id="soon"></a>
+                        <span class="tooltiptext">Coming soon</span>
+                    </div>
+
+
+                    <div class="tooltip"><a href="#"><a href="#"><img src="assets/flag/germany.png" id="soon"></a>
+                            <span class="tooltiptext">Coming soon</span>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
@@ -41,6 +81,7 @@
     <script src="js/three.min.js"></script>
     <script src="js/vanta.fog.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
