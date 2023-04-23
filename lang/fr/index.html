@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>AnimeClient</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+
+    <link rel="shortcut icon" href="https://ac.akali.best/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://ac.akali.best/assets/favicon.ico" type="image/x-icon">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link link="" href="https://fonts.googleapis.com/css?family=Lato:400|Raleway:700" rel="stylesheet">
+    <style>
+        body {
+            position: absolute;
+            overflow: hidden;
+            color: #eee;
+            background-color: white;
+            font-family: "Lato", sans-serif;
+        }
+
+        .close-btn {
+            position: absolute;
+            right: 1em;
+            padding: 5px;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .backward {
+            position: absolute;
+            right: 7em;
+            padding: 5px;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .forward {
+            position: absolute;
+            right: 5em;
+            padding: 5px;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        #bg-vid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 1280px;
+            height: 720px;
+            z-index: -1;
+            filter: blur(4px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+    <header style="-webkit-app-region: drag">
+        <img class="logo" id="logo" src="/assets/logo/icon512.png" alt="logo"
+            style="z-index: 999; -webkit-app-region: no-drag;">
+
+
+        <a href="" style="-webkit-app-region: no-drag" class="close-btn" onclick="window.close();"><img
+                src="/assets/close.png" alt="close" width="15px" /></a>
+
+
+
+
+        <a href="#" style="-webkit-app-region: no-drag" class="backward" onclick="backward();"><img
+                src="./assets/left-arrow.png" width="15px" /></a>
+
+
+        <a href="#" style="-webkit-app-region: no-drag" class="forward" onclick="forward()"><img
+                src="./assets/right-arrow.png" width="15px" /></a>
+
+
+
+        <!-- Anilist.co -->
+        <a href="#" style="-webkit-app-region: no-drag; right: 69em; color: white; text-decoration: none;"
+            class="close-btn" onclick="anilist()"><img src="./assets/logo/anilist512.png"
+                style="top: 5px; border-radius: 5px;" width="20px" />
+            Anilist</a>
+        <!-- Voiranime.com -->
+        <a href="#" style="-webkit-app-region: no-drag; right: 62em; color: white; text-decoration: none;"
+            class="close-btn" onclick="voiranime()"><img src="./assets/logo/voiranime128.png"
+                style="top: 5px; border-radius: 5px;" width="20px" />
+            Voiranime</a>
+
+        <!-- Vostfree.tv -->
+        <a href="#" style="-webkit-app-region: no-drag; right: 56em; color: white; text-decoration: none;"
+            class="close-btn" onclick="vostfree()"><img src="./assets/logo/vostfree.png"
+                style="top: 5px; border-radius: 5px;" width="20px" />
+            Vostfree</a>
+
+        <!-- neko-sama.fr -->
+        <a href="#" style="-webkit-app-region: no-drag; right: 49em; color: white; text-decoration: none;"
+            class="close-btn" onclick="nekosama()"><img src="./assets/logo/nekosama.png"
+                style="top: 5px; border-radius: 5px;" width="20px" />
+            Neko-sama</a>
+
+
+
+    </header>
+
+    <section id="video">
+        <webview id="foo" src="https://duckduckgo.com">
+        </webview>
+    </section>
+
+</body>
+
+
+<script src="./js/nav.js"></script>
+
+</html>
