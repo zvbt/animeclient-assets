@@ -41,14 +41,15 @@
 </head>
 
 <body>
+    <div class="loader"></div>
     <video id="bg-vid" autoplay muted loop>
         <source src="/assets/videos/6.webm" type="video/mp4">
     </video>
 
     <div class="box"></div>
     <header style="-webkit-app-region: drag">
-        <img class="logo" src="/assets/logo/icon512.png" alt="logo"> <a href="" style="-webkit-app-region: no-drag"
-            class="close-btn" onclick="window.close();"><img src="assets/close.png" alt="close" width="15px" /></a>
+        <img draggable="false" class="logo" src="/assets/logo/icon512.png" alt="logo"> <a draggable="false" href="" style="-webkit-app-region: no-drag"
+            class="close-btn" onclick="window.close();"><img src="assets/close.png" draggable="false" alt="close" width="15px" /></a>
     </header>
 
     <section id="video">
@@ -58,29 +59,21 @@
 
                 <div class="container">
 
-                    <a href="/lang/fr/index.html"> <img src="assets/flag/france.png"></a>
+                    <a draggable="false" href="/lang/fr/index.html"> <img draggable="false" src="assets/flag/france.png"></a>
 
-                    <div class="tooltip"><a href="#"><img src="assets/flag/uk.png" id="soon"></a>
+                    <div class="tooltip"><a draggable="false" href="#"><img draggable="false" src="assets/flag/uk.png" id="soon"></a>
                         <span class="tooltiptext">Coming soon</span>
                     </div>
 
 
-                    <div class="tooltip"><a href="#"><a href="#"><img src="assets/flag/germany.png" id="soon"></a>
+                    <div class="tooltip"><a href="#"><a draggable="false" href="#"><img draggable="false" src="assets/flag/germany.png" id="soon"></a>
                             <span class="tooltiptext">Coming soon</span>
                     </div>
-
-
 
                 </div>
             </div>
         </div>
     </section>
-
-
-    <script src="js/three.min.js"></script>
-    <script src="js/vanta.fog.min.js"></script>
-    <script src="js/script.js"></script>
-
 </body>
 
 </html>

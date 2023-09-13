@@ -1,11 +1,10 @@
 const logo = document.getElementById("logo");
 logo.addEventListener("click", function () {
-  webview.loadURL("https://duckduckgo.com");
+  // webview.loadURL("http://127.0.0.1:5500/");
 
-  // window.location.href = "/index.html";
+   window.location.href = "/index.html";
 });
 
-//var webview = document.getElementById("foo");
 const webview = document.querySelector("webview");
 function forward() {
   webview.goForward();
@@ -32,7 +31,7 @@ function anilist() {
 }
 
 function vostfree() {
-  webview.loadURL("https://vostfree.tv");
+  webview.loadURL("https://vostfree.ws");
   webview.addEventListener("did-finish-load", function () {
     webview.insertCSS("body{background: #2E3543!important}");
   });
@@ -42,5 +41,13 @@ function nekosama() {
   webview.loadURL("https://neko-sama.fr");
   webview.addEventListener("did-finish-load", function () {
     webview.insertCSS("body{background: #101010!important}");
+  });
+}
+
+function crunchyroll() {
+  
+  webview.loadURL("https://crunchyroll.com");
+  webview.addEventListener("did-finish-load", function () {
+    webview.insertCSS("body{background: #000!important}");
   });
 }
