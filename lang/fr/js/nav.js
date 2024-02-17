@@ -42,10 +42,10 @@ function nekosama() {
   });
 }
 
-function crunchyroll() {
+function ADN() {
   
-  webview.loadURL("https://crunchyroll.com");
+  webview.loadURL("https://animationdigitalnetwork.fr");
   webview.addEventListener("did-finish-load", function () {
-    webview.insertCSS("body{background: #000!important}");
+    webview.insertCSS("body{background: #04121a!important}");
   });
 }
