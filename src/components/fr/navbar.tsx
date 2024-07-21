@@ -32,9 +32,6 @@ function Navbar() {
     function voiranime() {
         if (webviewReady) {
             (document.querySelector("webview") as any).loadURL("https://voiranime.com");
-            (document.querySelector("webview") as any).addEventListener("did-finish-load", function () {
-
-            });
         }
     }
 
@@ -62,6 +59,11 @@ function Navbar() {
             (document.querySelector("webview") as any).loadURL("https://animationdigitalnetwork.fr");
         }
     }
+    function adkami() {
+        if (webviewReady) {
+            (document.querySelector("webview") as any).loadURL("https://animationdigitalnetwork.fr");
+        }
+    }
 
     return (
         <nav className='flex items-center fixed top-0 w-full h-11 mb-10 bg-ctp-crust z-50 shadow-ctp-base opacity-100 3xl:opacity-0' style={{ WebkitAppRegion: 'drag' } as React.CSSProperties}>
@@ -82,7 +84,10 @@ function Navbar() {
                     <a href="#" onClick={voiranime} className="ml-2 mr-3 hover:text-ctp-blue">Voiranime</a> 
                     {/* Vostfree */}
                     <img src="/assets/fr/logo/vostfree.png" width={20} height={20} className='rounded-md'/>
-                    <a href="#" onClick={vostfree} className="ml-2 hover:text-ctp-blue">Vostfree</a> 
+                    <a href="#" onClick={vostfree} className="ml-2 mr-3 hover:text-ctp-blue">Vostfree</a>
+                    {/* ADKami */}
+                    <img src="/assets/fr/logo/adkami.png" width={20} height={20} className='rounded-md'/>
+                    <a href="#" onClick={adkami} className="ml-2 mr-3 hover:text-ctp-blue">ADKami</a> 
                 </div>
 
             </div>
