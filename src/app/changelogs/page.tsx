@@ -18,12 +18,8 @@ export default function Home() {
         <div className='mt-5 z-50 justify-center items-center'>
           <h1 className='text-3xl'>Changelogs</h1>
           <ul className='mt-5 list-disc'>
-            <li>Reverted back to the old engine (way more stable)</li>
-            <li>Changed UI color palette (<a href="#" className="text-ctp-blue">Catpuccin</a>)</li>
-            <li>Fixed ads blocking</li>
-            <li>Disabled hardware acceleration (Enable screenshare in Discord)</li>
-            <li>Removed darkmode for Voiranime,Vostfree</li>
-            <li>Removed app size limit</li>
+            <li>Added support for english sub/dub</li>
+            <li>Added ADKami</li>
           </ul>
         </div>
       </div>

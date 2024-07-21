@@ -26,7 +26,7 @@ export default function Home() {
                     <div id="services" className="pt-2">
                         <div className="flex justify-center">
                             <Link href={'/fr'}><Image src={"/assets/flag/france.png"} alt="" width={50} height={50} quality={100} className='mx-2'/></Link>
-                            <Link href={'#'}><Image src={"/assets/flag/uk.png"} alt="" width={50} height={50} quality={100} className='mx-2 cursor-not-allowed' style={disabled}/></Link>
+                            <Link href={'/en'}><Image src={"/assets/flag/uk.png"} alt="" width={50} height={50} quality={100} className='mx-2'/></Link>
                             <Link href={'#'}><Image src={"/assets/flag/germany.png"} alt="" width={50} height={50} quality={100} className='mx-2 cursor-not-allowed' style={disabled}/></Link>
                         </div>
                     </div>
