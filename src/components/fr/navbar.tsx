@@ -61,7 +61,7 @@ function Navbar() {
     }
     function adkami() {
         if (webviewReady) {
-            (document.querySelector("webview") as any).loadURL("https://animationdigitalnetwork.fr");
+            (document.querySelector("webview") as any).loadURL("https://www.adkami.com/");
         }
     }
 
