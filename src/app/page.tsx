@@ -13,13 +13,14 @@ export default function Home() {
       <title>AnimeClient</title>
       <div className="ctp-mocha relative h-screen bg-ctp-mantle">
                 <Navbar />
-                <video 
+                {/* <video 
                 src="/assets/videos/6.webm" 
                 className='fixed top-0 left-0 w-screen h-screen object-cover z-0 blur-sm'
                 autoPlay={true}
                 muted={true}
                 loop={true}
-              ></video>
+              ></video> */}
+              <Image src={"/assets/background/121.jpg"} alt="" width={1920} height={1080} className="fixed top-0 left-0 w-screen h-screen object-cover z-0 blur-sm"/>
                 <div className='absolute block w-screen h-screen border-[8px] border-ctp-crust pointer-events-none z-50'></div>
                 <div className="flex flex-col items-center fixed mt-36 top-0 left-0 w-full h-full z-10 text-ctp-text">
                     <h1 className="text-2xl font-semibold text-white">Select your language</h1>
