@@ -36,6 +36,13 @@ function Navbar() {
         }
     }
 
+    function animunet() {
+        if (webviewReady) {
+            (document.querySelector("webview") as any).loadURL("https://animunet.zvbt.space/");
+
+        }
+    }
+
     function gogoanime() {
         if (webviewReady) {
             (document.querySelector("webview") as any).loadURL("https://gogoanime3.co/");
@@ -84,6 +91,9 @@ function Navbar() {
                     {/* Animeflix */}
                     <img src="/assets/en/logo/animeflix.png" width={20} height={20} className='rounded-md'/>
                     <a href="#" onClick={animeflix} className="ml-2 mr-3 hover:text-ctp-blue">Animeflix</a>
+                    {/* Animunet Selfhosted */}
+                    <img src="/assets/en/logo/animunet.png" width={20} height={20} className='rounded-md'/>
+                    <a href="#" onClick={animunet} className="ml-2 mr-3 hover:text-ctp-blue">Animunet</a>
                 </div>
 
             </div>
