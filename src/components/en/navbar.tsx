@@ -86,28 +86,28 @@ function Navbar() {
                 <Link href={'/'}><Image src={"/assets/logo.png"} width={32} height={32} alt='logo' quality={100} className='rounded-full'></Image></Link>
                 <div className='ml-5 flex items-center justify-center text-ctp-text'>
                     {/* Anilist */}
-                    <img src="/assets/en/logo/anilist.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/en/logo/anilist.png" width={20} height={20} className='rounded-md' alt='anilist'/>
                     <a href="#" onClick={anilist} className="ml-2 mr-3 hover:text-ctp-blue">Anilist</a> 
                    {/* Gogo Anime */}
-                   <img src="/assets/en/logo/gogoanime.png" width={20} height={20} className='rounded-md'/>
+                   <Image src="/assets/en/logo/gogoanime.png" width={20} height={20} className='rounded-md' alt='gogoanime'/>
                     <a href="#" onClick={gogoanime} className="ml-2 mr-3 hover:text-ctp-blue">GoGoAnime</a> 
                     {/* 9anime */}
-                    <img src="/assets/en/logo/9anime.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/en/logo/9anime.png" width={20} height={20} className='rounded-md' alt='9anime'/>
                     <a href="#" onClick={nineanime} className="ml-2 mr-3 hover:text-ctp-blue">9Anime</a>
                     {/* Aniwave */}
-                    <img src="/assets/en/logo/aniwave.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/en/logo/aniwave.png" width={20} height={20} className='rounded-md' alt='aniwave'/>
                     <a href="#" onClick={aniwave} className="ml-2 mr-3 hover:text-ctp-blue">Aniwave</a>
                     {/* Animeflix */}
-                    <img src="/assets/en/logo/animeflix.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/en/logo/animeflix.png" width={20} height={20} className='rounded-md' alt='animeflix'/>
                     <a href="#" onClick={animeflix} className="ml-2 mr-3 hover:text-ctp-blue">Animeflix</a>
                     {/* Animunet Selfhosted */}
-                    <img src="/assets/en/logo/animunet.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/en/logo/animunet.png" width={20} height={20} className='rounded-md' alt='animunet'/>
                     <a href="#" onClick={animunet} className="ml-2 mr-3 hover:text-ctp-blue">Animunet</a>
                     {/* Netflix */}
-                    <img src="/assets/fr/logo/netflix.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/fr/logo/netflix.png" width={20} height={20} className='rounded-md' alt='netflix'/>
                     <a href="#" onClick={netflix} className="ml-2 mr-3 hover:text-ctp-blue">Netflix</a>
                     {/* Crunchyroll */}
-                    <img src="/assets/fr/logo/crunchyroll.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/fr/logo/crunchyroll.png" width={20} height={20} className='rounded-md' alt='crunchyroll'/>
                     <a href="#" onClick={crunchyroll} className="ml-2 mr-3 hover:text-ctp-blue">Crunchyroll</a> 
                 </div>
 

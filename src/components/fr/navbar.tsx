@@ -81,28 +81,28 @@ function Navbar() {
                 <Link href={'/'}><Image src={"/assets/logo.png"} width={32} height={32} alt='logo' quality={100} className='rounded-full'></Image></Link>
                 <div className='ml-5 flex items-center justify-center text-ctp-text'>
                     {/* Anilist */}
-                    <img src="/assets/fr/logo/anilist.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/fr/logo/anilist.png" width={20} height={20} className='rounded-md' alt='anilist'/>
                     <a href="#" onClick={anilist} className="ml-2 mr-3 hover:text-ctp-blue">Anilist</a> 
                     {/* ADN */}
-                    <img src="/assets/fr/logo/adn.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/fr/logo/adn.png" width={20} height={20} className='rounded-md' alt='adn'/>
                     <a href="#" onClick={ADN} className="ml-2 mr-3 hover:text-ctp-blue">Adn</a> 
                     {/* Neko-sama */}
-                    <img src="/assets/fr/logo/neko-sama.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/fr/logo/neko-sama.png" width={20} height={20} className='rounded-md' alt='nekosama'/>
                     <a href="#" onClick={nekosama} className="ml-2 mr-3 hover:text-ctp-blue">Neko-sama</a> 
                     {/* Voiranime */}
-                    <img src="/assets/fr/logo/voiranime.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/fr/logo/voiranime.png" width={20} height={20} className='rounded-md' alt='voiranime'/>
                     <a href="#" onClick={voiranime} className="ml-2 mr-3 hover:text-ctp-blue">Voiranime</a> 
                     {/* Vostfree */}
-                    <img src="/assets/fr/logo/vostfree.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/fr/logo/vostfree.png" width={20} height={20} className='rounded-md' alt='vostfree'/>
                     <a href="#" onClick={vostfree} className="ml-2 mr-3 hover:text-ctp-blue">Vostfree</a>
                     {/* ADKami */}
-                    <img src="/assets/fr/logo/adkami.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/fr/logo/adkami.png" width={20} height={20} className='rounded-md' alt='adkami'/>
                     <a href="#" onClick={adkami} className="ml-2 mr-3 hover:text-ctp-blue">ADKami</a> 
                     {/* Netflix */}
-                    <img src="/assets/fr/logo/netflix.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/fr/logo/netflix.png" width={20} height={20} className='rounded-md' alt='netflix'/>
                     <a href="#" onClick={netflix} className="ml-2 mr-3 hover:text-ctp-blue">Netflix</a>
                     {/* Crunchyroll */}
-                    <img src="/assets/fr/logo/crunchyroll.png" width={20} height={20} className='rounded-md'/>
+                    <Image src="/assets/fr/logo/crunchyroll.png" width={20} height={20} className='rounded-md' alt='crunchyroll'/>
                     <a href="#" onClick={crunchyroll} className="ml-2 mr-3 hover:text-ctp-blue">Crunchyroll</a> 
                 </div>
 
