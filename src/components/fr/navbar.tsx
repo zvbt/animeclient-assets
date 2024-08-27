@@ -64,6 +64,16 @@ function Navbar() {
             (document.querySelector("webview") as any).loadURL("https://www.adkami.com/");
         }
     }
+    function netflix() {
+        if (webviewReady) {
+            (document.querySelector("webview") as any).loadURL("https://www.netflix.com/");
+        }
+    }
+    function crunchyroll() {
+        if (webviewReady) {
+            (document.querySelector("webview") as any).loadURL("https://www.crunchyroll.com/");
+        }
+    }
 
     return (
         <nav className='flex items-center fixed top-0 w-full h-11 mb-10 bg-ctp-crust z-50 shadow-ctp-base opacity-100 3xl:opacity-0' style={{ WebkitAppRegion: 'drag' } as React.CSSProperties}>
@@ -88,6 +98,12 @@ function Navbar() {
                     {/* ADKami */}
                     <img src="/assets/fr/logo/adkami.png" width={20} height={20} className='rounded-md'/>
                     <a href="#" onClick={adkami} className="ml-2 mr-3 hover:text-ctp-blue">ADKami</a> 
+                    {/* Netflix */}
+                    <img src="/assets/fr/logo/netflix.png" width={20} height={20} className='rounded-md'/>
+                    <a href="#" onClick={netflix} className="ml-2 mr-3 hover:text-ctp-blue">Netflix</a>
+                    {/* Crunchyroll */}
+                    <img src="/assets/fr/logo/crunchyroll.png" width={20} height={20} className='rounded-md'/>
+                    <a href="#" onClick={crunchyroll} className="ml-2 mr-3 hover:text-ctp-blue">Crunchyroll</a> 
                 </div>
 
             </div>

@@ -68,7 +68,16 @@ function Navbar() {
 
         }
     }
-
+    function netflix() {
+        if (webviewReady) {
+            (document.querySelector("webview") as any).loadURL("https://www.netflix.com/");
+        }
+    }
+    function crunchyroll() {
+        if (webviewReady) {
+            (document.querySelector("webview") as any).loadURL("https://www.crunchyroll.com/");
+        }
+    }
 
 
     return (
@@ -94,6 +103,12 @@ function Navbar() {
                     {/* Animunet Selfhosted */}
                     <img src="/assets/en/logo/animunet.png" width={20} height={20} className='rounded-md'/>
                     <a href="#" onClick={animunet} className="ml-2 mr-3 hover:text-ctp-blue">Animunet</a>
+                    {/* Netflix */}
+                    <img src="/assets/fr/logo/netflix.png" width={20} height={20} className='rounded-md'/>
+                    <a href="#" onClick={netflix} className="ml-2 mr-3 hover:text-ctp-blue">Netflix</a>
+                    {/* Crunchyroll */}
+                    <img src="/assets/fr/logo/crunchyroll.png" width={20} height={20} className='rounded-md'/>
+                    <a href="#" onClick={crunchyroll} className="ml-2 mr-3 hover:text-ctp-blue">Crunchyroll</a> 
                 </div>
 
             </div>
