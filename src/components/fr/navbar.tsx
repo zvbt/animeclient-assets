@@ -76,7 +76,7 @@ function Navbar() {
     }
 
     return (
-        <nav className='flex items-center fixed top-0 w-full h-11 mb-10 bg-ctp-crust z-50 shadow-ctp-base opacity-100 3xl:opacity-0' style={{ WebkitAppRegion: 'drag' } as React.CSSProperties}>
+        <nav className='flex items-center fixed top-0 w-full h-11 mb-10 bg-ctp-crust z-50 shadow-ctp-base opacity-100 1080:opacity-0 900:opacity-0 720:opacity-0' style={{ WebkitAppRegion: 'drag' } as React.CSSProperties}>
             <div className="flex items-center mx-5 3xl:opacity-0" style={{ WebkitAppRegion: 'no-drag' } as React.CSSProperties}>
                 <Link href={'/'}><Image src={"/assets/logo.png"} width={32} height={32} alt='logo' quality={100} className='rounded-full'></Image></Link>
                 <div className='ml-5 flex items-center justify-center text-ctp-text'>

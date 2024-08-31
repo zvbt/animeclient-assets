@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      '3xl': '1920px',
+      '1080': '1920px',
+      '900': '1600px',
+      '720': '1280px',
     },
   },
   plugins: [
