@@ -48,12 +48,6 @@ function Navbar() {
         }
     }
 
-    function nekosama() {
-        if (webviewReady) {
-            (document.querySelector("webview") as any).loadURL("https://neko-sama.fr");
-        }
-    }
-
     function ADN() {
         if (webviewReady) {
             (document.querySelector("webview") as any).loadURL("https://animationdigitalnetwork.fr");
@@ -86,9 +80,6 @@ function Navbar() {
                     {/* ADN */}
                     <Image src="/assets/fr/logo/adn.png" width={20} height={20} className='rounded-md' alt='adn'/>
                     <a href="#" onClick={ADN} className="ml-2 mr-3 hover:text-ctp-blue">Adn</a> 
-                    {/* Neko-sama */}
-                    <Image src="/assets/fr/logo/neko-sama.png" width={20} height={20} className='rounded-md' alt='nekosama'/>
-                    <a href="#" onClick={nekosama} className="ml-2 mr-3 hover:text-ctp-blue">Neko-sama</a> 
                     {/* Voiranime */}
                     <Image src="/assets/fr/logo/voiranime.png" width={20} height={20} className='rounded-md' alt='voiranime'/>
                     <a href="#" onClick={voiranime} className="ml-2 mr-3 hover:text-ctp-blue">Voiranime</a> 
