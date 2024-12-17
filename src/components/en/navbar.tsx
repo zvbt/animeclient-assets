@@ -100,9 +100,9 @@ function Navbar() {
                     {/* Animeflix */}
                     <Image src="/assets/en/logo/animeflix.png" width={20} height={20} className='rounded-md' alt='animeflix'/>
                     <a href="#" onClick={animeflix} className="ml-2 mr-3 hover:text-ctp-blue">Animeflix</a>
-                    {/* Animunet Selfhosted */}
+                    {/* Animunet Selfhosted
                     <Image src="/assets/en/logo/animunet.png" width={20} height={20} className='rounded-md' alt='animunet'/>
-                    <a href="#" onClick={animunet} className="ml-2 mr-3 hover:text-ctp-blue">Animunet</a>
+                    <a href="#" onClick={animunet} className="ml-2 mr-3 hover:text-ctp-blue">Animunet</a> */}
                     {/* Netflix */}
                     <Image src="/assets/fr/logo/netflix.png" width={20} height={20} className='rounded-md' alt='netflix'/>
                     <a href="#" onClick={netflix} className="ml-2 mr-3 hover:text-ctp-blue">Netflix</a>
